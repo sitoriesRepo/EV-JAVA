@@ -27,5 +27,9 @@ script:
 after_success:
   - bash <(curl -s https://codecov.io/bash)
 
+env:
+  global:
+    - CODECOV_TOKEN="f2e5f84a-0527-456d-8588-69c36bc81479"
+
 notifications:
   email: true
